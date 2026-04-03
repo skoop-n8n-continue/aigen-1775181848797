@@ -1,0 +1,43 @@
+{
+  "hotelName": "GRAND LUMIÈRE",
+  "guestName": "Mr. Raul Jung",
+  "location": "Paris, FR",
+  "weatherUnit": "F",
+  "backgroundUrl": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Fhotel_background-1775181257329.png",
+  "navItems": [
+    {"label": "Home", "active": true},
+    {"label": "Dining", "active": false},
+    {"label": "Concierge", "active": false},
+    {"label": "TV Guide", "active": false},
+    {"label": "Room Service", "active": false}
+  ],
+  "tvGuide": [
+    {"channel": "CH 04", "show": "CNN International News", "status": "LIVE"},
+    {"channel": "CH 12", "show": "The Grand Tour", "time": "14:30"},
+    {"channel": "CH 28", "show": "Premier League: Chelsea vs Arsenal", "time": "16:00"}
+  ],
+  "attraction": {
+    "title": "Local Attractions",
+    "name": "The Louvre Museum",
+    "description": "World's largest art museum, a 10-minute walk.",
+    "imageUrl": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Fattraction-1775181325114.png"
+  },
+  "restaurant": {
+    "title": "Nearby Dining",
+    "name": "L'Ambroisie",
+    "description": "Exquisite 3-Michelin star French cuisine.",
+    "imageUrl": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Frestaurant-1775181301709.png"
+  },
+  "roomService": {
+    "title": "Room Service",
+    "description": "Craving a midnight snack? View our curated menu.",
+    "buttonLabel": "Order Now",
+    "imageUrl": "https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Froom_service-1775181280521.png"
+  },
+  "colors": {
+    "primary": "#00b7af",
+    "dark": "#10181f",
+    "light": "#ffffff",
+    "secondary": "#6a7071"
+  }
+}

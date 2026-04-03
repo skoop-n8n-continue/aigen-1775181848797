@@ -12,19 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-overlay"></div>
+    <div class="background-overlay" id="background-overlay"></div>
     <div class="app-container">
         <!-- Sidebar Navigation (Visual Only for Signage) -->
         <nav class="sidebar">
             <div class="hotel-logo">
-                <span class="logo-text">GRAND<br>LUMIÈRE</span>
+                <span class="logo-text" id="hotel-logo-text">GRAND<br>LUMIÈRE</span>
             </div>
-            <div class="nav-items">
-                <div class="nav-item active">Home</div>
-                <div class="nav-item">Dining</div>
-                <div class="nav-item">Concierge</div>
-                <div class="nav-item">TV Guide</div>
-                <div class="nav-item">Room Service</div>
+            <div class="nav-items" id="nav-items">
+                <!-- Nav items will be injected here -->
             </div>
             <div class="sidebar-footer">
                 <div id="current-time">12:00 PM</div>
@@ -35,11 +31,11 @@
         <main class="main-content">
             <!-- Header Section -->
             <header class="welcome-section">
-                <h1 class="welcome-text">Welcome, <span id="guest-name">Mr. Raul Jung</span></h1>
+                <h1 class="welcome-text">Welcome, <span id="guest-name">...</span></h1>
                 <div class="weather-widget">
-                    <span id="weather-temp">72°F</span>
-                    <span id="weather-desc">Partly Cloudy</span>
-                    <span class="weather-location">Paris, FR</span>
+                    <span id="weather-temp">--°F</span>
+                    <span id="weather-desc">Loading...</span>
+                    <span class="weather-location" id="weather-location">...</span>
                 </div>
             </header>
 
@@ -47,46 +43,32 @@
             <div class="content-grid">
                 <!-- TV Guide / Now Playing -->
                 <section class="grid-card tv-guide">
-                    <h3>TV Guide</h3>
-                    <div class="tv-list">
-                        <div class="tv-item playing">
-                            <span class="channel">CH 04</span>
-                            <span class="show">CNN International News</span>
-                            <span class="time-status">LIVE</span>
-                        </div>
-                        <div class="tv-item">
-                            <span class="channel">CH 12</span>
-                            <span class="show">The Grand Tour</span>
-                            <span class="time">14:30</span>
-                        </div>
-                        <div class="tv-item">
-                            <span class="channel">CH 28</span>
-                            <span class="show">Premier League: Chelsea vs Arsenal</span>
-                            <span class="time">16:00</span>
-                        </div>
+                    <h3 id="tv-guide-title">TV Guide</h3>
+                    <div class="tv-list" id="tv-list">
+                        <!-- TV items will be injected here -->
                     </div>
                 </section>
 
                 <!-- Local Attractions -->
                 <section class="grid-card attractions">
-                    <h3>Local Attractions</h3>
+                    <h3 id="attraction-title">Local Attractions</h3>
                     <div class="attraction-card">
-                        <img src="https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Fattraction-1775181325114.png" alt="Attraction">
+                        <img src="" alt="Attraction" id="attraction-img">
                         <div class="card-info">
-                            <h4>The Louvre Museum</h4>
-                            <p>World's largest art museum, a 10-minute walk.</p>
+                            <h4 id="attraction-name">...</h4>
+                            <p id="attraction-desc">...</p>
                         </div>
                     </div>
                 </section>
 
                 <!-- Best Restaurants -->
                 <section class="grid-card restaurants">
-                    <h3>Nearby Dining</h3>
+                    <h3 id="restaurant-title">Nearby Dining</h3>
                     <div class="restaurant-card">
-                        <img src="https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Frestaurant-1775181301709.png" alt="Restaurant">
+                        <img src="" alt="Restaurant" id="restaurant-img">
                         <div class="card-info">
-                            <h4>L'Ambroisie</h4>
-                            <p>Exquisite 3-Michelin star French cuisine.</p>
+                            <h4 id="restaurant-name">...</h4>
+                            <p id="restaurant-desc">...</p>
                         </div>
                     </div>
                 </section>
@@ -94,11 +76,11 @@
                 <!-- Room Service CTA -->
                 <section class="grid-card room-service">
                     <div class="cta-banner">
-                        <img src="https://skoop-dev-code-agent.s3.us-east-1.amazonaws.com/n8n-continue%2Faigen-1775181193876%2Fassets%2Froom_service-1775181280521.png" alt="Room Service">
+                        <img src="" alt="Room Service" id="room-service-img">
                         <div class="cta-overlay">
-                            <h3>Room Service</h3>
-                            <p>Craving a midnight snack? View our curated menu.</p>
-                            <button class="cta-button">Order Now</button>
+                            <h3 id="room-service-title">Room Service</h3>
+                            <p id="room-service-desc">...</p>
+                            <button class="cta-button" id="room-service-button">...</button>
                         </div>
                     </div>
                 </section>
